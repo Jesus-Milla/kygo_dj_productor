@@ -1,0 +1,620 @@
+/*reseteo*/
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(230, 231, 216);
+}
+
+/*...estilos para pagina inicio...*/
+/*...header...*/
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dj {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.encabesado {
+    width: 100%;
+
+    padding: 5pxpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo_kygo {
+    width: 10%;
+    border-radius: 10px;
+}
+
+/*..estilos para la barra de navegacion...*/
+.paginas {
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: rgb(230, 231, 216);
+    width: 20%;
+
+}
+
+.menu_div_ul {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 5px;
+}
+
+/* ...sobre el artista... */
+.descripcion {
+    background-image: url(../assets/img/galeria/kygo_cinco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    background-attachment: cover;
+
+    color: rgba(201, 201, 223, 0.295);
+}
+
+/*...galeria...*/
+.titulo_galeria {
+    width: 100%;
+    background-color: rgba(128, 116, 94, 0.212);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+}
+
+/*..estilos para img..*/
+.galeria {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.galeria_img {
+    width: 90%;
+    height: 20vh;
+}
+
+.galeria_img-uno {
+    background-image: url(../assets/img/galeria/amigos.jpeg);
+    background-size: cover;
+}
+
+.galeria_img-dos {
+    background-image: url(../assets/img/galeria/avicii.jpg);
+    background-size: cover;
+}
+
+.galeria_img-tres {
+    background-image: url(../assets/img/galeria/martin.jpg);
+    background-size: cover;
+}
+
+.galeria_img-cuatro {
+    background-image: url(../assets/img/galeria/kigo_1.jpeg);
+    background-size: cover;
+}
+
+.galeria_img-cinco {
+    background-image: url(../assets/img/galeria/kigo_2.jpeg);
+    background-size: cover;
+}
+
+.galeria_img-seis {
+    background-image: url(../assets/img/galeria/kygo_3.jpeg);
+    background-size: cover;
+}
+
+.galeria_img-siete {
+    background-image: url(../assets/img/galeria/kygo_4.jpeg);
+    background-size: cover;
+}
+
+/* ...estilos para redes sociales... */
+.redes {
+    width: 100%;
+    height: 15%;
+
+   padding: 5px;
+
+    display: flex;
+}
+
+.redes_logo {
+    width: 80%;
+}
+
+.pie_de_pagina {
+    width: 100%;
+
+    background-color: rgba(0, 0, 255, 0.205);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2px;
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo_kygo {
+        width: 8%;
+        border-radius: px;
+
+    }
+
+    .descripcion {
+        background-image: url(../assets/img/galeria/kygo_cinco.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .galeria {
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(4, 30vh);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .galeria_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria_img-uno {
+        grid-column: 1/3;
+    }
+
+    .redes_logo {
+        width: 5vh;
+    }
+
+    .redes {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+@media(min-width:1200px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(5, 43vh);
+    }
+
+
+}
+
+/*.......................................*/
+/*...estilos para musica...*/
+.musica_h2 {
+    width: 100%;
+    color: rgb(94, 37, 37);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musica_albun {
+
+    width: 100%;
+
+    background-color: rgba(138, 137, 109, 0.212);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.albun_title {
+    width: 100%;
+
+    background-color: rgba(189, 88, 88, 0.76);
+    border-radius: 5px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(14, 14, 66);
+
+}
+
+.albun_img {
+    width: 20%;
+
+    border-radius: 5px;
+}
+
+.albun {
+    width: 100%;
+
+    background-color: rgba(158, 184, 184, 0.356);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.musica {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.albun_portada {
+    width: 0;
+}
+
+.albun_redes {
+    width: 50%;
+}
+
+.controls {
+    width: 90%;
+
+}
+
+@media(min-width:768px) {
+
+    .musica_h2 {
+        font-size: 1.8rem;
+    }
+
+    .albun_title {
+        font-size: 1.4rem
+    }
+
+    .albun_portada {
+        width: 15%;
+        border-radius: 5px;
+    }
+
+    .albun_redes {
+        width: 30%;
+    }
+
+    .controls {
+        width: 50%;
+
+    }
+
+    .musica {
+        align-items: center;
+    }
+
+}
+
+@media(min-width:1200px) {
+    .musica_h2 {
+        font-size: 1.7rem;
+    }
+
+    .albun_title {
+        font-size: 1.4rem
+    }
+
+    .albun_portada {
+        width: 10%;
+        border-radius: 5px;
+    }
+
+    .controls {
+        width: 60%;
+
+    }
+
+    .musica {
+        align-items: center;
+    }
+}
+
+/*..............................*/
+/*...estilos para giras...*/
+.giras_title {
+    width: 100%;
+    background-color: rgba(129, 170, 129, 0.582);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: rgba(75, 25, 25, 0.918);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.giras_title-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+.title_de_section {
+    width: 100%;
+    color: brown;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.giras_evento {
+    width: 270px;
+    height: 300px;
+
+    background-color: rgba(149, 194, 179, 0.993);
+    border: 2px solid black;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.evento_img {
+    width: 100%;
+    height: 75%;
+
+    padding: 5px;
+}
+
+.giras {
+    width: 100%;
+    padding: 5px;
+
+    background-color: rgba(115, 128, 126, 0.781);
+    border-top: 1px solid brown;
+    border-radius: 8px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.evento_descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.............................*/
+/*...estilos para la pagina tienda...*/
+
+.tienda {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(37, 26, 26);
+}
+
+.section {
+    width: 60%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto_prenda {
+    width: 200px;
+    height: 300px;
+
+    border: solid black;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.producto_descripcion {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton_compra {
+    background-color: rgba(95, 16, 243, 0.788);
+    color: white;
+    padding: 2px;
+
+    border: #141414 solid 3px;
+    border-radius: 10px;
+}
+
+.producto_img {
+
+    width: 100%;
+    height: 80%;
+}
+
+/* .producto{
+    
+    padding: 10px;
+
+    display: flex;
+    overflow-x: auto;
+
+    gap: 5px;
+} */
+
+.producto {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 5px;
+    padding: 10px;
+}
+
+/*.................................*/
+/*...estilos para la pagina sobre*/
+.sobre_title {
+    width: 100%;
+
+    color: rgb(73, 36, 36);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre_section {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comunidad_mienbro {
+    width: 300px;
+    height: 350;
+
+    border: 2px solid black;
+    padding: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comunidad_mienbro-img {
+    width: 100%;
+    height: 70%;
+}
+
+.comunidad {
+    width: 100%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(54, 8, 8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soni_musica {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soni_img {
+    width: 40%;
+}
+
+.formulario {
+    width: 100%;
+
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.botones_limpiar-enviar {
+    width: 100%;
+
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media(min-width:768px) {
+    .soni_musica {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+/*.........................*/
+/*...estilos para paginas...*/
+/*...estlilos para derechos de autor...*/
+.derechos_texto p {
+    width: 100%;
+
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.boton_derechos{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
